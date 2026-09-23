@@ -23,6 +23,11 @@ function setup() {
  */
 function draw() {
     background(0,0,0)
-    fill (random(0,255), 0,0); 
-    ellipse(mouseX, mouseY, 50, 50);
+    fill (255, 0,0); 
+    ellipse(250,250,ellipse_size, ellipse_size);
+    fill(0,0,255);
+    rect(width/2, height/2,rect_size);
+    ellipse_size = ellipse_size-1;
+    rect_size=rect_size+1;
+
 }
