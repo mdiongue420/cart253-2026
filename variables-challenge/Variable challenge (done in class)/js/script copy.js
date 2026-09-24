@@ -25,6 +25,16 @@ let sky = {
   g: 180,
   b: 200
 };
+let bird = {
+  x: 20,
+  y: 50,
+  size: 50,
+  fill: {
+    r: 0,
+    g: 0,
+    b: 255
+  }
+};
 
 /**
  * Create the canvas
@@ -50,4 +60,10 @@ function draw() {
   mrFurious.fill.g = mrFurious.fill.g - 1;
   mrFurious.fill.b = mrFurious.fill.b - 1;
   pop();
+
+  fill(bird.fill.r, bird.fill.g, bird.fill.b);
+  quad(bird.x, bird.y, bird.x + bird.size, bird.y, bird.x, bird.y - bird.size, bird.x - bird.size, bird.y);
+    bird.x = bird.x + 1;
+    
+
 }
