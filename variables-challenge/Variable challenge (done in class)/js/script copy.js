@@ -20,6 +20,11 @@ let mrFurious = {
     b: 225
   }
 };
+let sky = {
+  r: 160,
+  g: 180,
+  b: 200
+};
 
 /**
  * Create the canvas
@@ -32,7 +37,10 @@ function setup() {
  * Draw (and update) Mr. Furious
  */
 function draw() {
-  background(160, 180, 200);
+  background(sky.r, sky.g, sky.b);
+  sky.r = sky.r - 1;
+  sky.g = sky.g - 1;
+  sky.b = sky.b - 1;
   
   // Draw Mr. Furious as a coloured circle
   push();
