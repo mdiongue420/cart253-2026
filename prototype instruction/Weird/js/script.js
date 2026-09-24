@@ -38,12 +38,8 @@ function draw() {
     fill (128,0,128);
     arc(350, 50, 80, 80, 0, PI + HALF_PI);
 
-    // Rotate around the y-axis.
-  rotateY(frameCount * 0.01);
-
-  // Draw the quad.
-  quad(-30, -30, 0, 30, -30, 0, 30, 30, 20, -30, 30, -20);
-}
+    
     
 
 
+}

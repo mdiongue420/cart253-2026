@@ -39,5 +39,7 @@ function draw() {
   noStroke();
   fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
+  mrFurious.fill.g = mrFurious.fill.g - 1;
+  mrFurious.fill.b = mrFurious.fill.b - 1;
   pop();
 }
