@@ -59,11 +59,13 @@ function draw() {
   ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
   mrFurious.fill.g = mrFurious.fill.g - 1;
   mrFurious.fill.b = mrFurious.fill.b - 1;
+  mrFurious.x = mrFurious.x + 1;
+  mrFurious.x= map(mrFurious.x, 0, width, 0, 255);
+  mrFurious.y = map(mrFurious.y, 0, height, 0, 255);
   pop();
 
   fill(bird.fill.r, bird.fill.g, bird.fill.b);
   quad(bird.x, bird.y, bird.x + bird.size, bird.y, bird.x, bird.y - bird.size, bird.x - bird.size, bird.y);
     bird.x = bird.x + 1;
-    
 
 }
