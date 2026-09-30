@@ -7,9 +7,9 @@
 "use strict";
 
 let sky = {
-    r: 160,
-    g: 180,
-    b: 200
+    r: 0,
+    g: 191,
+    b: 255
 };
 let sun = {
     r: 20,
@@ -33,7 +33,12 @@ function setup() {
 */
 function draw() {
     background(sky.r, sky.g, sky.b);
-    fill(sun.r, sun.g, sun.b);
-    ellipse(sun.x, sun.y, 50, 50);
+    //clouds
+    fill(255,255,255);
+    ellipse(400, 50, 300, 100);
+    ellipse(300, 30, 300, 100);
+    ellipse(200, 50, 300, 100);
+    ellipse(100, 30, 300, 100);
+    ellipse(50, 50, 300, 100);
 
 }
