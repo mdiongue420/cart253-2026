@@ -46,9 +46,8 @@ function setup() {
 function draw() {
     mouseX, mouseY
     let distance = dist(creature.x, creature.y, mouseX, mouseY);
-    let mouseIsMoving = (movedX > 0 || movedY > 0);
     //console.log(distance);
-    if (distance < creature.w/2 || mouseIsPressed === true) {
+    if (distance < creature.w/2 ||mouseIsPressed === true) {
         creature.currentFill = creature.fillstates.angry;
     }
     //if (keyIsPressed === true) {

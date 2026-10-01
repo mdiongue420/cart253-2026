@@ -73,6 +73,4 @@ function draw() {
     moon.g = moon.g + 1;
     moon.b = moon.b + 1;
 
-   
-
 }
