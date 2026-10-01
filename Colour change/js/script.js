@@ -42,14 +42,21 @@ function setup() {
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
+
 function draw() {
-    if (keyIsPressed === true) {
+    mouseX, mouseY
+    let distance = dist(creature.x, creature.y, mouseX, mouseY);
+    //console.log(distance);
+    if (distance < creature.w/2 ||mouseIsPressed === true) {
         creature.currentFill = creature.fillstates.angry;
-    } 
-    
-    else {
-        creature.currentFill = creature.fillstates.neutral;
     }
+    //if (keyIsPressed === true) {
+        //creature.currentFill = creature.fillstates.angry;
+  //  } 
+    
+    //else {
+        //creature.currentFill = creature.fillstates.neutral;
+   // }
     background(0);
     push();
     //body
