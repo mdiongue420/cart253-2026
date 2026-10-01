@@ -43,9 +43,11 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    if (mouseIsPressed === true) {
+    if (keyIsPressed === true) {
         creature.currentFill = creature.fillstates.angry;
-    } else {
+    } 
+    
+    else {
         creature.currentFill = creature.fillstates.neutral;
     }
     background(0);
