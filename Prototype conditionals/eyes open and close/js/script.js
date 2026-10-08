@@ -7,28 +7,39 @@
  */
 
 "use strict";
-let iscircle = true;
+let isCircle = true;
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * canva setup + weight of the lines
 */
 function setup() {
-createCanvas(400,400)
+createCanvas(400, 400);
+  strokeWeight(4);     
+  
+
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
-    background(220);
-    if (iscircle) {
-        circle(width/2, height/2, 100);
-    } else {
-        line(150,200,250,200);
-    }
+ * draws the circles or lines based on the isCircle flag
+ */
+function draw() {  
+    background(240,255,255)
+   if (isCircle) {
+    // Left Circle
+    fill(0,255,255)
+    circle(130, 200, 80);
+    // Right Circle
+    circle(270, 200, 80);
+  } else {
+    // Left Horizontal Line (centered at X: 130, Y: 200, Length: 80)
+    line(90, 200, 170, 200);
+    // Right Horizontal Line (centered at X: 270, Y: 200, Length: 80)
+    line(230, 200, 310, 200);
+  }
+  }
 
 function mousePressed() {
-    iscircle = !iscircle;
-
+    isCircle = !isCircle;
+// 
 }
