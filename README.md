@@ -19,3 +19,10 @@ Maimouna coursework repository for CART253
 ### Eclipse
 [link to Eclipse](http://127.0.0.1:5500/cart253-2026/Variable%20prototype/moving/)
 ### didn't do a 3rd one sorry
+## Prototype : conditional
+### Paper Plane
+[link to Paper Plane](http://127.0.0.1:5500/cart253-2026/Prototype%20conditionals/paper%20plane/)
+### Eyes open n close
+[link to eyes open n close](http://127.0.0.1:5500/cart253-2026/Prototype%20conditionals/eyes%20open%20and%20close/)
+### Car crash
+[link to Car crash](http://127.0.0.1:5500/cart253-2026/Prototype%20conditionals/car%20crash/)
