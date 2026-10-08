@@ -4,3 +4,5 @@ test text
 It's still hard to fully comprehend the x and y and where my shape is gonna apear. But I am slowly getting it but it is a lot of trial and error. I lowkey have fun, but the little details are overwelming highkey.
 ## September 30, 2026
 variable and condition is hella hard. I understand about half of it. Math isn't my cup of tea so i find it difficult to visualize concepts of coding sometimes.
+## October 7, 2026
+It was a bit easier today. I am starting to understand the elements of code and the logic of it. All 3 prototype show different conditions and I am pretty happy with them. I would like to be able to add more details.
