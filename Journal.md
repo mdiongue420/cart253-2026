@@ -5,4 +5,4 @@ It's still hard to fully comprehend the x and y and where my shape is gonna apea
 ## September 30, 2026
 variable and condition is hella hard. I understand about half of it. Math isn't my cup of tea so i find it difficult to visualize concepts of coding sometimes.
 ## October 7, 2026
-It was a bit easier today. I am starting to understand the elements of code and the logic of it. All 3 prototype show different conditions and I am pretty happy with them. I would like to be able to add more details.
+It was a bit easier today. I am starting to understand the elements of code and the logic of it. All 3 prototype show different conditions such as mouse pressed, mouse dragged and key pressed and I am pretty happy with them. I would like to be able to add more details. Also, I think I have a better understanding of how to modify a already existing code and make it my own.
