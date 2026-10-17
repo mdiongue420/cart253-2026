@@ -10,7 +10,10 @@
 {
 // Variable to control rotation
 let angle = 0;
+let speed = 0.5; // Speed of rotation
+let numSpokes = 8; // Number of spokes in the Ferris wheel
 };
+
 
 
 /**
@@ -33,8 +36,8 @@ function draw() {
   // 3. Draw the outer rim and center hub
   stroke(100);
   strokeWeight(4);
-  noFill();
-  circle(0, 0, 240); // Rim (diameter 240, radius 120)
+  Fill(128,0,128);
+  circle(0, 0, 240); // Outer rim
   
   fill(50);
   noStroke();

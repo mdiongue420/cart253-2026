@@ -5,6 +5,7 @@
  * change of colour day into night */
 
 "use strict";
+// Variable declarations for the each object
 
 let moon = {
     r: 50,
@@ -29,7 +30,7 @@ let sun = {
 };
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * creating set up with canvas
  
 */
 function setup() {
@@ -40,7 +41,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draw function to change the colour of the sky, sun, moon and clouds
 */
 function draw() {
     background(sky.r, sky.g, sky.b);

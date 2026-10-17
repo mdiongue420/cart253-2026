@@ -7,6 +7,7 @@
  */
 
 "use strict";
+// Variable declarations for the each object
 let sky = {
     r: 25,
     g: 25,
@@ -46,8 +47,8 @@ let movingchange = 0;
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+ * creating set up with canvas
+ */
 function setup(){
     createCanvas(400, 400);
 
@@ -55,8 +56,8 @@ function setup(){
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+ * draw function to animate the eclipse
+ */
 function draw() {
     background(sky.r, sky.g, sky.b);
     sky.r = sky.r - 1;

@@ -15,8 +15,7 @@ let isCircle = true;
 function setup() {
 createCanvas(400, 400);
   strokeWeight(4);     
-  
-
+  fill(240,255,255);   
 }
 
 
@@ -41,5 +40,5 @@ function draw() {
 
 function mousePressed() {
     isCircle = !isCircle;
-// 
+//
 }
