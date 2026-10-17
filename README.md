@@ -18,7 +18,8 @@ Maimouna coursework repository for CART253
 [link to Day n Night](http://127.0.0.1:5500/cart253-2026/Variable%20prototype/Colour%20change/)
 ### Eclipse
 [link to Eclipse](http://127.0.0.1:5500/cart253-2026/Variable%20prototype/moving/)
-### didn't do a 3rd one sorry
+### clock
+[link to clock](http://127.0.0.1:5500/cart253-2026/Variable%20prototype/rotating/)
 ## Prototype : conditional
 ### Paper Plane
 [link to Paper Plane](http://127.0.0.1:5500/cart253-2026/Prototype%20conditionals/paper%20plane/)
