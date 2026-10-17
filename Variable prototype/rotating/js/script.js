@@ -9,7 +9,8 @@
 "use strict";
 
 // Variable to control rotation
-let angle = 0;
+let angle1 = 0;
+let angle2 = 0;
 
 function setup() {
   createCanvas(400, 400);
@@ -23,9 +24,6 @@ function draw() {
   push(); // Save the current drawing state
   translate(width / 2, height / 2);
   
-  // Use your angle variable and increment it
-  rotate(angle);
-  angle += 1; // Increase the angle every frame
  
   // Draw the circle in the center (0,0 relative to the translation)
   fill(135,206,250);
@@ -33,12 +31,28 @@ function draw() {
   strokeWeight(1);
   circle(0, 0, 250);
 
-  // Draw the animated line from the center
-  stroke(255);
+ // --- FIRST LINE ---
+  push();
+  rotate(angle1);
+  angle1 += 1; // Speed of line 1 (slow)
+  
+  stroke(0);   // Black line
   strokeWeight(5);
   line(0, 0, 150, 0);
+  pop(); // End first line rotation
+
+  // --- SECOND LINE ---
+  push();
+  rotate(angle2);
+  angle2 += 3; // Speed of line 2 (faster! Change this to adjust speed)
   
-  pop(); // Restore the original drawing state so it doesn't affect other shapes
+  stroke(255, 0, 0); // Red line so you can distinguish it
+  strokeWeight(3);
+  line(0, 0, 120, 0); // Can also be a different length
+  pop(); // End second line rotation
+
+  pop(); // End main canvas translation
+
 
 
 }
