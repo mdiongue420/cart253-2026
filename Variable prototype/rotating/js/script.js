@@ -26,6 +26,12 @@ function draw() {
   // Use your angle variable and increment it
   rotate(angle);
   angle += 1; // Increase the angle every frame
+ 
+  // Draw the circle in the center (0,0 relative to the translation)
+  fill(135,206,250);
+  stroke(0);
+  strokeWeight(1);
+  circle(0, 0, 250);
 
   // Draw the animated line from the center
   stroke(255);
@@ -34,7 +40,5 @@ function draw() {
   
   pop(); // Restore the original drawing state so it doesn't affect other shapes
 
-  // Draw a circle centered on the canvas (using the translated center)
-  fill(255);
-  // circle(0, 0, 128); // Uncomment if you want it in the middle
+
 }
