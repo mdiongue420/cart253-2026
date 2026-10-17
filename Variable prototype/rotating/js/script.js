@@ -31,24 +31,24 @@ function draw() {
   strokeWeight(1);
   circle(0, 0, 250);
 
- // --- FIRST LINE ---
+ //FIRST LINE
   push();
   rotate(angle1);
   angle1 += 1; // Speed of line 1 (slow)
   
   stroke(0);   // Black line
   strokeWeight(5);
-  line(0, 0, 150, 0);
+  line(0, 0, 100, 0);
   pop(); // End first line rotation
 
-  // --- SECOND LINE ---
+  //SECOND LINE
   push();
   rotate(angle2);
-  angle2 += 3; // Speed of line 2 (faster! Change this to adjust speed)
+  angle2 += 2; // Speed of line 2
   
   stroke(255, 0, 0); // Red line so you can distinguish it
-  strokeWeight(3);
-  line(0, 0, 120, 0); // Can also be a different length
+  strokeWeight(5);
+  line(0, 0, 85, 0); // Can also be a different length
   pop(); // End second line rotation
 
   pop(); // End main canvas translation
