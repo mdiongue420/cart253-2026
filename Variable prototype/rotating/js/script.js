@@ -7,64 +7,34 @@
  */
 
 "use strict";
-{
+
 // Variable to control rotation
 let angle = 0;
-let speed = 0.5; // Speed of rotation
-let numSpokes = 8; // Number of spokes in the Ferris wheel
-};
 
-
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 function setup() {
   createCanvas(400, 400);
   angleMode(DEGREES); // Use degrees for easy counting
 }
 
 function draw() {
-  background(220);
-  
-  // 1. Move to the center of the canvas
+  background(0,0,139);
+
+  // Move origin to the center first so transformations apply correctly
+  push(); // Save the current drawing state
   translate(width / 2, height / 2);
   
-  // 2. Rotate the entire wheel continuously
+  // Use your angle variable and increment it
   rotate(angle);
+  angle += 1; // Increase the angle every frame
+
+  // Draw the animated line from the center
+  stroke(255);
+  strokeWeight(5);
+  line(0, 0, 150, 0);
   
-  // 3. Draw the outer rim and center hub
-  stroke(100);
-  strokeWeight(4);
-  Fill(128,0,128);
-  circle(0, 0, 240); // Outer rim
-  
-  fill(50);
-  noStroke();
-  circle(0, 0, 20); // Hub
-  
-  // 4. Draw spokes and gondolas easily using a loop
-  let numSpokes = 8;
-  stroke(100);
-  strokeWeight(3);
-  
-  for (let i = 0; i < 360; i += 360 / numSpokes) {
-    push(); // Save the current rotation state
-    
-    // Rotate to the specific spoke's angle
-    rotate(i);
-    
-    // Draw a straight vertical line from center to edge (no math needed!)
-    line(0, 0, 0, -120);
-    
-    // Draw the passenger car at the outer edge of this spoke
-    fill(150, 50, 50);
-    noStroke();
-    circle(0, -135, 25); // Placed just outside the 120-radius rim
-    
-    pop(); // Restore rotation state for the next spoke
-  }
-  
-  // 5. Spin speed
-  angle += 0.5;
+  pop(); // Restore the original drawing state so it doesn't affect other shapes
+
+  // Draw a circle centered on the canvas (using the translated center)
+  fill(255);
+  // circle(0, 0, 128); // Uncomment if you want it in the middle
 }
