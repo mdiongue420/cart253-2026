@@ -3,6 +3,6 @@ test text
 ## September 23rd 2026
 It's still hard to fully comprehend the x and y and where my shape is gonna apear. But I am slowly getting it but it is a lot of trial and error. I lowkey have fun, but the little details are overwelming highkey.
 ## September 30, 2026
-variable and condition is hella hard. I understand about half of it. Math isn't my cup of tea so i find it difficult to visualize concepts of coding sometimes.
+variable and condition is hella hard. I understand about half of it. Math isn't my cup of tea so i find it difficult to visualize concepts of coding sometimes. It is also difficult to fullly understand when making a code and something is not working but no errors is showing. At first i wanted to do a ferris weal but i didn't understand how to rotate the circle in a simple way. but in P5 there is a code with a moving line, so it was easier to go off base to that code to make a clock than to make the whole circle plus some lines rotate at the same time. I think the key was in the variables but i got a bit lost, so i went to a easier way. It still looks like a clock so i am happy with the result.
 ## October 7, 2026
 It was a bit easier today. I am starting to understand the elements of code and the logic of it. All 3 prototype show different conditions such as mouse pressed, mouse dragged and key pressed and I am pretty happy with them. I would like to be able to add more details. Also, I think I have a better understanding of how to modify a already existing code and make it my own.
