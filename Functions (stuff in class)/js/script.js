@@ -66,7 +66,7 @@ function draw() {
 }
 
 function ChangeY(yVal) {
-    yVal = yVal - 1;
+    yVal = yVal + 1;
     console.log(yVal);
 }
 
