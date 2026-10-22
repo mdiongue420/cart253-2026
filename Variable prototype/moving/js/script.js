@@ -2,12 +2,12 @@
  * Eclipse
  * 
  * 
- * An eclipse 
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * An eclipse : the moon and sun are moving towards each other and the sky is changing colors.
+ * 
  */
 
 "use strict";
-// Variable declarations for the each object
+// Variable declarations for each object
 let sky = {
     r: 25,
     g: 25,
