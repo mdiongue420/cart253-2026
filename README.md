@@ -27,3 +27,5 @@ Maimouna coursework repository for CART253
 [link to eyes open n close](http://127.0.0.1:5500/cart253-2026/Prototype%20conditionals/eyes%20open%20and%20close/)
 ### Car crash
 [link to Car crash](http://127.0.0.1:5500/cart253-2026/Prototype%20conditionals/car%20crash/)
+## Function Challenge
+[link to function challenge](http://127.0.0.1:5500/cart253-2026/Functions%20challenge/)
