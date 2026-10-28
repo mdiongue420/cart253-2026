@@ -13,7 +13,20 @@
 */
 function setup() {
     createCanvas(400, 400);
+    
 
+}
+let square = {
+    x: 100,
+    y: 250,
+    w: 40,
+    h: 60
+}
+let squareSecond = {
+    x: 200,
+    y: 300,
+    w: 40,
+    h: 40
 }
 
 
@@ -28,20 +41,19 @@ function draw() {
 }
     
 
-    
-
-
 
 function drawSquare(x1, y) {
     push();
     fill(100, 150, 255);
     rect(x1, y, 40, 40);
     pop();
+    return ;
 
 }
-function drawSquareTwo(x1, y) {
+function drawSquareTwo(tempSquare) {
     push();
     fill(100, 150, 255);
-    rect(x1, y, 40, 40);
+    rect(tempSquare.x, tempSquare.y, tempSquare.w, tempSquare.h);
     pop();
-}
+    return;
+} 
