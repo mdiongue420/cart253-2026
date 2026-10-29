@@ -29,3 +29,5 @@ Maimouna coursework repository for CART253
 [link to Car crash](http://127.0.0.1:5500/cart253-2026/Prototype%20conditionals/car%20crash/)
 ## Function Challenge
 [link to function challenge](http://127.0.0.1:5500/cart253-2026/Functions%20challenge/)
+## Arrays Challenge
+[link to arrays challenge](http://127.0.0.1:5500/cart253-2026/Array%20challenge/)
