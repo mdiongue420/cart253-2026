@@ -29,6 +29,9 @@ let squareSecond = {
     h: 40
 }
 
+function addTwoNumbers(ValA, ValB) {
+    let ValC = ValA + ValB;
+}
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
@@ -38,8 +41,12 @@ function draw() {
     drawSquare(100, 250);  
     drawSquareTwo(square);
     drawSquareTwo(squareSecond);
-}
-    
+    let returnedvalue = addTwoNumbers (20,70)
+    console.log(returnedvalue)
+
+    let returnValue_Two = addTwoNumbers (400, 70)
+    console.log (returnedValue_two)
+}    
 
 
 function drawSquare(x1, y) {
