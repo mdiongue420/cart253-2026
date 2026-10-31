@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * Change of Shape  
+ * Maimouna
  * 
  * Every time key is pressed, shaped changes
  */
@@ -16,8 +16,13 @@ function setup() {
 
 function draw() {
   background(220);
+}
+function mousePressed() {
+  stamp(mouseX, mouseY);
+}
 
-  // Set the fill color for the shape
+function stamp(x, y){
+push();   
   fill(100, 150, 255);
   noStroke();
 
@@ -25,11 +30,15 @@ function draw() {
   if (shapeIndex === 0) {
     // 1. Circle
     ellipse(width / 2, height / 2, 100, 100);
+    Pop();
   } 
+  push();
   else if (shapeIndex === 1) {
     // 2. Square
     rect(width / 2, height / 2, 100, 100);
+    pop();
   } 
+  push();
   else if (shapeIndex === 2) {
     // 3. Triangle
     triangle(
@@ -37,15 +46,7 @@ function draw() {
       width / 2 - 60, height / 2 + 50,    
       width / 2 + 60, height / 2 + 50     
     );
+    pop; 
   }
 }
 
-function mousePressed() {
-  // Check if the mouse click is close to the center
-  let d = dist(mouseX, mouseY, width / 2, height / 2);
-
-  if (d < 60) {
-    // Switch to the next shape (loops back to 0 after 2)
-    shapeIndex = (shapeIndex + 1) % 3;
-  }
-}
