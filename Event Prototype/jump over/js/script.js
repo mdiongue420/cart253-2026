@@ -13,6 +13,16 @@ let gravity = 0.6;
 let jumpForce = -11;
 
 let triangleX = 400;
+const target = {
+  x: 200,
+  y: 200,
+  size: 100,
+  fill: "#ff0000",
+  fills: {
+    noOverlap: "#ff0000",
+    overlap: "#00ff00"
+  } 
+}
 
 function setup() {
   createCanvas(400, 300);
@@ -30,6 +40,10 @@ function draw() {
     playerY = 250;
     playerVY = 0;
   }
+  function draw() {
+  checkOverlap();
+  drawTarget();
+}
 
   // 2. Move the triangle obstacle across the screen
   triangleX -= 4;
