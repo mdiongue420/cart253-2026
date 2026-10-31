@@ -30,29 +30,44 @@ function setup() {
 function draw() {
   // Instead of a solid background, i use a semi-transparent background 
   background(206, 135, 201, 20); 
-  
-  // Check for continuous key presses and update position
-  if (keyIsDown(RIGHT_ARROW)) {
-    player.x += player.speed;
-  }
-  if (keyIsDown(LEFT_ARROW)) {
-    player.x -= player.speed;
-  }
-  if (keyIsDown(UP_ARROW)) {
-    player.y -= player.speed;
-  }
-  if (keyIsDown(DOWN_ARROW)) {
-    player.y += player.speed;
-  }
-
-  // Keep the player inside the canvas boundaries
-  player.x = constrain(player.x, 0, width - player.size);
-  player.y = constrain(player.y, 0, height - player.size);
-
-  // Draw the player
+  // The player
   push();
   noStroke();
   fill(player.fill);
   rect(player.x, player.y, player.size, player.size);
   pop();
+}
+  
+ function keyPressed(event) {
+  // Check if it was one of the arrows and choose the move
+  // direction
+  let move = {
+    x: 0,
+    y: 0
+  };
+  if (event.keyCode === RIGHT_ARROW) {
+    move.x = tileSize;
+  }
+  else if (event.keyCode === LEFT_ARROW) {
+    move.x = -tileSize;
+  }
+  else if (event.keyCode === UP_ARROW) {
+    move.y = -tileSize;
+  }
+  else if (event.keyCode === DOWN_ARROW) {
+    move.y = tileSize;
+  }
+  // Apply the movement if there is any
+  // and play the sound effect
+  if (move.x !== 0 || move.y !== 0) {
+
+    const p = random(0, 100);
+    if (p < 10) {
+      move.y = -move.y;
+    }
+    
+    player.x += move.x;
+    player.y += move.y;
+    player.moveSFX.play();
+  }
 }
