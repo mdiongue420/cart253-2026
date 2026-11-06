@@ -3,13 +3,14 @@
  * Maimouna
  * 
  * Everytime the mouse is clicked on the cloud, a raindrop falls down the screen.
+ * Inspired by arrays challenge.
  */
 
 "use strict";
 let rainDrops = []; // Array to hold all the raindrops
 
 /**
- * Setup canvas and initial raindrops
+ * Setup canvas
  */
 function setup() {
     createCanvas(400, 400);
@@ -17,7 +18,8 @@ function setup() {
 }
 
 /**
- * Helper function to create a single raindrop object
+ * // create raindrops
+ 
  */
 function createRainDrop() {
     const rainDrop = {
@@ -62,7 +64,7 @@ function drawClouds() {
 }
 
 function mousePressed() {
-    // The center of our cloud is roughly around x: 115, y: 100
+    // The center of cloud
     const cloudX = 115;
     const cloudY = 100;
     
@@ -73,8 +75,8 @@ function mousePressed() {
     if (d < 50) {
         // Create a new raindrop starting right at the cloud
         const newRainDrop = {
-            x: random(90, 140), // Spawns across the width of the cloud
-            y: 120,             // Just under the cloud
+            x: random(90, 140), 
+            y: 120,             
             velocity: {
                 x: 0,
                 y: random(3, 8)
@@ -88,9 +90,3 @@ function mousePressed() {
     }
 }
 
-// Keep your spacebar reset if you still want it
-function keyPressed() {
-    if (keyCode === 32) {
-        rainDrops = []; // Clear current drops on spacebar
-    }
-}
