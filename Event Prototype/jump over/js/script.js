@@ -4,7 +4,7 @@
  * 
  /**
  * Square Jumping over Triangle + Mouse Hover Color Change
- * Combines Pippin Barr's DIY distance() with jump mechanics
+ * Combines Pippin Barr's DIY distance() with jump
  */
 
 "use strict";
@@ -88,7 +88,7 @@ function checkMouseHover() {
 }
 
 /**
- * Calculate the distance between two (x, y) coordinates using Pythagorean theorem
+ * Calculate the distance between two (x, y)
  */
 function distance(x1, y1, x2, y2) {
   const dx = x1 - x2;

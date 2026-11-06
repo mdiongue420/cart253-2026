@@ -1,8 +1,9 @@
 /**
- * Get on the other side
+ * side to side
  * Maimouna
  *
- * / Square moves side to side with arrow keys, leaving a trail behind
+ * / Square moves side to side with arrow keys. Inspired by Tile Based Movement
+
  */
 // The size of a single tile
 const tileSize = 32;
