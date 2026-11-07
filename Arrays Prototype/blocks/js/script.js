@@ -42,7 +42,7 @@ function createBlock() {
         },
         size: random(15, 40),
         fill: "#445566",
-        isMoving: true // Initialize isMoving to true for each new block
+        isMoving: true 
     };
     return block;
 }
@@ -60,7 +60,6 @@ function draw() {
  * Moves a block according to its velocity (if it's allowed to move)
  */
 function moveBlock(block) {
-    // 2. Only update position if block.isMoving is true
     if (block.isMoving) {
         block.x += block.velocity.x;
         block.y += block.velocity.y;
@@ -79,15 +78,12 @@ function drawBlock(block) {
 }
 
 /**
- * Stops blocks if you click (near) them
+ * Stops blocks if click (near) them
  */
 function mousePressed() {
-    // We need to check EVERY block to see if it was clicked
     for (let block of blocks) {
-        // Get the distance between the mouse and the block
         const d = dist(mouseX, mouseY, block.x, block.y);
         
-        // Check if it's close enough
         if (d < block.size * 2) {
             block.isMoving = false; // stop the block from moving
         }
