@@ -8,11 +8,11 @@
 
 let obstacles = []; // Array to hold all the obstacles
 
-// Player dot setup (Added 'speed' property here!)
+// Player dot setup
 let playerDot = {
     x: 200,
     y: 200,
-    speed: 4, // <--- This prevents the dot from disappearing
+    speed: 4, 
     size: 16,
     fill: "#FF4136"
 };
@@ -40,10 +40,10 @@ function addObstacle() {
 
 function createObstacle() {
     const obstacle = {
-        x: -50,                // Start off-screen on the left
-        y: random(0, height),  // Random height on the screen
+        x: -50,                
+        y: random(0, height), 
         velocity: {
-            x: random(2, 5),   // Moves sideways
+            x: random(2, 5),   
             y: 0 
         },
         size: random(20, 50),
@@ -72,10 +72,9 @@ function moveObstacle(obstacle) {
         obstacle.x += obstacle.velocity.x; 
         obstacle.y += obstacle.velocity.y; 
 
-        // Keep obstacles in the frame: if it goes off the right edge, wrap it back to the left
         if (obstacle.x > width) {
             obstacle.x = -obstacle.size;
-            obstacle.y = random(0, height - obstacle.size); // Give it a new random height when it loops
+            obstacle.y = random(0, height - obstacle.size); 
         }
     }
 }
@@ -92,7 +91,7 @@ function drawObstacle(obstacle) {
  * Updates the dot position using arrow keys and handles collisions
  */
 function updatePlayerDot() {
-    // Check arrow keys for movement
+    // Arrow keys for movement
     if (keyIsDown(LEFT_ARROW)) {
         playerDot.x -= playerDot.speed;
     }
@@ -106,11 +105,9 @@ function updatePlayerDot() {
         playerDot.y += playerDot.speed;
     }
 
-    // Keep the player dot strictly inside the canvas frame
     playerDot.x = constrain(playerDot.x, playerDot.size / 2, width - playerDot.size / 2);
     playerDot.y = constrain(playerDot.y, playerDot.size / 2, height - playerDot.size / 2);
 
-    // Check collision against each obstacle so the player can't pass through them
     for (let obstacle of obstacles) {
         let closestX = constrain(playerDot.x, obstacle.x, obstacle.x + obstacle.size);
         let closestY = constrain(playerDot.y, obstacle.y, obstacle.y + obstacle.size);

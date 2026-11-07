@@ -71,7 +71,7 @@ function mousePressed() {
     // Check the distance between the mouse and the center of the cloud
     const d = dist(mouseX, mouseY, cloudX, cloudY);
     
-    // If the click is close enough to the cloud (radius roughly 50px)
+    // If the click is close enough to the cloud
     if (d < 50) {
         // Create a new raindrop starting right at the cloud
         const newRainDrop = {

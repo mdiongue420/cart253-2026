@@ -42,7 +42,7 @@ function createBlock() {
         },
         size: random(15, 40),
         fill: "#445566",
-        isMoving: true // <--- 1. Initialize isMoving to true for each new block
+        isMoving: true // Initialize isMoving to true for each new block
     };
     return block;
 }
@@ -87,9 +87,9 @@ function mousePressed() {
         // Get the distance between the mouse and the block
         const d = dist(mouseX, mouseY, block.x, block.y);
         
-        // Check if it's close enough (using block.size, or block.size * 2)
+        // Check if it's close enough
         if (d < block.size * 2) {
-            block.isMoving = false; // <--- This now successfully halts movement
+            block.isMoving = false; // stop the block from moving
         }
     }
 }

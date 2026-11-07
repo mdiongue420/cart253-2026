@@ -38,3 +38,10 @@ Maimouna coursework repository for CART253
 [link to Press to Change Shape](http://127.0.0.1:5500/cart253-2026/Event%20Prototype/press%20to%20change%20shape/)
 ### Jump Over
 [link to Jump Over](http://127.0.0.1:5500/cart253-2026/Event%20Prototype/jump%20over/)
+## Arrays Prototypes
+### Blocks
+[link to Blocks](http://127.0.0.1:5500/cart253-2026/Arrays%20Prototype/blocks/)
+### Rain n Clouds
+[link to rain n clouds](http://127.0.0.1:5500/cart253-2026/Arrays%20Prototype/Rain%20n%20Clouds/)
+### Dots n Obstacles
+[link to dots and obstacles](http://127.0.0.1:5500/cart253-2026/Arrays%20Prototype/fill%20the%20buckets/)
