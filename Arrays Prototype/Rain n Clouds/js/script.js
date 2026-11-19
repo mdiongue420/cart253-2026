@@ -73,7 +73,6 @@ function mousePressed() {
     
     // If the click is close enough to the cloud
     if (d < 50) {
-        // Create a new raindrop starting right at the cloud
         const newRainDrop = {
             x: random(90, 140), 
             y: 120,             
